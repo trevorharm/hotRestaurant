@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Add Resevation</title>
+  <style>
+    .jumbotron {
+      text-align: center;
+    }
+    #userForm {
+      border: solid;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Hot Restaurant</h1>
+      <p>Book your seat before they are all gone!</p>
+      <button>Make Reservation</button>
+      <button>View Tables</button>
+    </div>
+    <div class="form" id="userForm">
+      <form>
+        <div class="form-group">
+          <label for="customer">Name:</label>
+          <input type="text" class="form-control" id="customer" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Email:</label>
+          <input type="email" class="form-control" id="emailAddress" placeholder="E-Mail">
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+            <label for="id">Unique ID:</label>
+            <input type="text" class="form-control" id="id" placeholder="Unique ID">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+    
+</body>
+</html>
