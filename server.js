@@ -30,7 +30,7 @@ app.get("/add", function(req, res) {
 });
 
 app.get("/all", function(req, res) {
-  res.sendFile(path.join(__dirname, "all.html"));
+  res.sendFile(path.join(__dirname, "reserve.html"));
 });
 
 // Search for Specific Character (or all characters) - provides JSON
