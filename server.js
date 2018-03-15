@@ -53,16 +53,17 @@ app.get("/api/:guest?", function(req, res) {
 
 // Create New guest - takes in JSON input
 app.post("/api/new", function(req, res) {
+  //console.log("RES", req.body);
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body-parser middleware
   var newguest = req.body;
   // Using a RegEx Pattern to remove spaces from newCharacter
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-  newguest.routeName = newguest.name.replace(/\s+/g, "").toLowerCase();
+  //newguest.routeName = newguest.name.replace(/\s+/g, "").toLowerCase();
 
   console.log(newguest);
 
-  characters.push(newguest);
+  guest.push(newguest);
 
   res.json(newguest);
 });

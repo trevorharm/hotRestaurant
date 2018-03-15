@@ -57,7 +57,7 @@
             phone: $("#phone").val().trim()
         };
 
-        $.post("/api/newguest", newGuest)
+        $.post("/api/new", newGuest)
         .then(function(data) {
             console.log(data);
             alert("Adding guest...");
