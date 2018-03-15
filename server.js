@@ -16,6 +16,25 @@ app.use(bodyParser.json());
 // guests data (DATA)
 // =============================================================
 var guest = [];
+//   {
+//     customer: "yoda",
+//     id: "Yoda",
+//     email: "Jedi Master",
+//     phone: 900,
+//   },
+//   {
+//     customer: "yoda",
+//     id: "Yoda",
+//     email: "Jedi Master",
+//     phone: 900,
+//   },
+//   {
+//     customer: "yoda",
+//     id: "Yoda",
+//     email: "Jedi Master",
+//     phone: 900,
+//   }
+// ];
 
 // Routes
 // =============================================================
@@ -34,7 +53,7 @@ app.get("/all", function(req, res) {
 });
 
 // Search for Specific Character (or all characters) - provides JSON
-app.get("/api/:guest?", function(req, res) {
+app.get("/api/", function(req, res) {
   var chosen = req.params.guest;
 
   if (chosen) {
