@@ -42,7 +42,6 @@ var guest = [];
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "home.html"));
-  res.sendFile(path.join(__dirname, "/images/41993-das-loft-sofitel-19to1.jpeg"));
 });
 
 app.get("/add", function(req, res) {
@@ -53,13 +52,14 @@ app.get("/all", function(req, res) {
   res.sendFile(path.join(__dirname, "reserve.html"));
 });
 
+app.get("/images/41993-das-loft-sofitel-19to1.jpeg", function(req, res) {
+  res.sendFile(path.join(__dirname, "/images/41993-das-loft-sofitel-19to1.jpeg"));
+})
+
 // Search for Specific Character (or all characters) - provides JSON
 app.get("/api/", function(req, res) {
   var chosen = req.params.guest;
 
-// app.get("/images/41993-das-loft-sofitel-19to1.jpeg"), function(req, res) {
-//   res.sendFile(path.join(__dirname, "/images/41993-das-loft-sofitel-19to1.jpeg"));
-// }
 
   if (chosen) {
     console.log(chosen);
