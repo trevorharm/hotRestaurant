@@ -8,8 +8,13 @@
   <title>Reservations</title>
 
   <style>
+    body {
+      background-image: url("images/41993-das-loft-sofitel-19to1.jpeg");
+      background-size: cover;
+    }
     .jumbotron {
       text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
     }
     h1 {
       border-bottom: solid 1px;
@@ -31,6 +36,17 @@
       background-color: #f1f1f1;
       width: 30%;
     }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: darkgrey;
+      color: white;
+      text-align: center;
+      height: 50px;
+      padding-top: 10px;
+  }
   </style>
 </head>
 <body>
@@ -54,6 +70,7 @@
       </div>
     </div>
   </div>
+  <div class="footer">@ Copyright 2018</div>
   <script type="text/javascript">
     $("#search-btn").on("click", function() {
         
