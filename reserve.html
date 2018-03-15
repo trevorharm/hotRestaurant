@@ -54,5 +54,28 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    $("#search-btn").on("click", function() {
+        
+        $.get("/api/", function(data) {
+          console.log(data);
+
+            data.forEach(function () {
+                
+                guestdiv = $("<div>");
+                
+                customerdiv = $("<div>");
+                iddiv = $("<div>");
+                emaildiv = $("<div>");
+                phonediv = $("<div>");
+
+                customerdiv.text(data.customer);
+                iddiv.text(data.id);
+                emaildiv.text(data.id);
+                phonediv.text(data.phone);
+            });
+        });
+    });
+  </script>
 </body>
 </html>
