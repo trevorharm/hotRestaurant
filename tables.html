@@ -44,8 +44,8 @@
       <a href="/add"><button type="button" id="reservation" class="btn btn-danger">Make Reservation</button></a>
       <a href="/all"><button type="button" id="viewAll" class="btn btn-danger">View Tables</button></a>
     </div>
-    <div class="form" id="userForm">
-      <form>
+    <div class="form">
+      <form id="userForm">
         <div class="form-group">
           <label for="customer">Name:</label>
           <input type="text" class="form-control" id="customer" placeholder="Name">
@@ -82,6 +82,8 @@
             console.log(data);
             alert("Adding guest...");
         });
+
+        $("#userForm")[0].reset();
     });
   </script>
 </body>
